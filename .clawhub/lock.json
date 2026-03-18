@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "skills": {
+    "searxng": {
+      "version": "1.0.3",
+      "installedAt": 1772692921716
+    },
+    "find-skills": {
+      "version": "0.1.0",
+      "installedAt": 1772701207406
+    },
+    "skill-vetter": {
+      "version": "1.0.0",
+      "installedAt": 1772701213428
+    },
+    "agent-browser": {
+      "version": "0.2.0",
+      "installedAt": 1772701268218
+    },
+    "self-improving-agent": {
+      "version": "1.0.11",
+      "installedAt": 1772701278822
+    },
+    "proactive-agent": {
+      "version": "3.1.0",
+      "installedAt": 1772701443637
+    },
+    "copywriter": {
+      "version": "1.1.0",
+      "installedAt": 1773818213913
+    },
+    "content-writer": {
+      "version": "1.0.0",
+      "installedAt": 1773818227886
+    },
+    "content-creator-cn": {
+      "version": "1.2.1",
+      "installedAt": 1773818229928
+    },
+    "analytics": {
+      "version": "1.0.0",
+      "installedAt": 1773818231963
+    },
+    "image": {
+      "version": "1.0.4",
+      "installedAt": 1773818255668
+    },
+    "ai-video-script": {
+      "version": "1.0.0",
+      "installedAt": 1773818257788
+    },
+    "seo": {
+      "version": "1.0.3",
+      "installedAt": 1773818295770
+    },
+    "china-stock-analysis": {
+      "version": "1.0.0",
+      "installedAt": 1773822840037
+    },
+    "akshare-stock": {
+      "version": "1.0.1",
+      "installedAt": 1773822841620
+    },
+    "trading": {
+      "version": "1.0.1",
+      "installedAt": 1773822860056
+    },
+    "stock-analysis": {
+      "version": "6.2.0",
+      "installedAt": 1773822893279
+    },
+    "tushare-data": {
+      "version": "1.0.12",
+      "installedAt": 1773822904968
+    },
+    "finance-report-analyzer": {
+      "version": "1.2.0",
+      "installedAt": 1773822905307
+    },
+    "quant-strategy": {
+      "version": "1.0.0",
+      "installedAt": 1773822966732
+    },
+    "akshare-fund": {
+      "version": "1.0.0",
+      "installedAt": 1773822970156
+    },
+    "fund-analyzer": {
+      "version": "1.0.0",
+      "installedAt": 1773822996001
+    }
+  }
+}

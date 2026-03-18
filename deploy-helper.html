@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub 部署助手 - 中考答题系统</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        h1 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            color: #6c757d;
+            margin-bottom: 30px;
+        }
+        .step {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-left: 4px solid #667eea;
+        }
+        .step-number {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .step-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #212529;
+        }
+        .step-content {
+            color: #495057;
+            line-height: 1.8;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            margin-top: 10px;
+            transition: transform 0.2s;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+        .code {
+            background: #2d3748;
+            color: #f7fafc;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: "Courier New", monospace;
+            margin: 10px 0;
+            overflow-x: auto;
+        }
+        .success {
+            background: #d4edda;
+            border-color: #28a745;
+            color: #155724;
+        }
+        .warning {
+            background: #fff3cd;
+            border-color: #ffc107;
+            color: #856404;
+        }
+        .checklist {
+            list-style: none;
+            margin-top: 10px;
+        }
+        .checklist li {
+            padding: 8px 0;
+        }
+        .checklist li:before {
+            content: "⬜ ";
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 GitHub 部署助手</h1>
+        <p class="subtitle">中考答题系统 - 3 分钟部署到网络</p>
+        
+        <div class="step warning">
+            <div class="step-title">
+                <span class="step-number">⚠️</span>
+                部署说明
+            </div>
+            <div class="step-content">
+                <p>由于需要 GitHub 账号认证，请按以下步骤手动操作。</p>
+                <p><strong>预计用时</strong>：3 分钟</p>
+                <p><strong>目标仓库</strong>：https://github.com/Franklinghu/zhongkao-practice</p>
+            </div>
+        </div>
+        
+        <div class="step">
+            <div class="step-title">
+                <span class="step-number">1</span>
+                创建 GitHub 仓库
+            </div>
+            <div class="step-content">
+                <p>1. 访问 GitHub 创建页面：</p>
+                <a href="https://github.com/new" target="_blank" class="btn">🔗 打开 GitHub</a>
+                
+                <p style="margin-top: 15px;">2. 填写以下信息：</p>
+                <ul class="checklist">
+                    <li>Repository name: <strong>zhongkao-practice</strong></li>
+                    <li>Description: 中考 100 天冲刺 - 每日答题系统</li>
+                    <li>选择 <strong>Public</strong>（公开）</li>
+                    <li>✅ 勾选 <strong>Add a README file</strong></li>
+                </ul>
+                
+                <p style="margin-top: 15px;">3. 点击 <strong>Create repository</strong></p>
+            </div>
+        </div>
+        
+        <div class="step">
+            <div class="step-title">
+                <span class="step-number">2</span>
+                上传答题页面
+            </div>
+            <div class="step-content">
+                <p>1. 在仓库页面点击 <strong>Add file</strong> → <strong>Upload files</strong></p>
+                
+                <p style="margin-top: 15px;">2. 打开文件管理器，进入：</p>
+                <div class="code">/home/admin/.openclaw/workspace/daily-practice/</div>
+                
+                <p style="margin-top: 15px;">3. 将文件拖拽到上传区域：</p>
+                <div class="code">2026-03-18-monday.html</div>
+                
+                <p style="margin-top: 15px;">4. 在下方输入提交信息：<code>Add Monday practice</code></p>
+                
+                <p style="margin-top: 15px;">5. 点击 <strong>Commit changes</strong></p>
+            </div>
+        </div>
+        
+        <div class="step">
+            <div class="step-title">
+                <span class="step-number">3</span>
+                启用 GitHub Pages
+            </div>
+            <div class="step-content">
+                <p>1. 点击仓库的 <strong>Settings</strong> 标签</p>
+                
+                <p style="margin-top: 15px;">2. 左侧菜单点击 <strong>Pages</strong></p>
+                
+                <p style="margin-top: 15px;">3. 在 <strong>Build and deployment</strong> 下设置：</p>
+                <ul class="checklist">
+                    <li>Source: Deploy from a branch</li>
+                    <li>Branch: 选择 <strong>main</strong></li>
+                    <li>Folder: 选择 <strong>/ (root)</strong></li>
+                </ul>
+                
+                <p style="margin-top: 15px;">4. 点击 <strong>Save</strong></p>
+            </div>
+        </div>
+        
+        <div class="step">
+            <div class="step-title">
+                <span class="step-number">4</span>
+                等待部署
+            </div>
+            <div class="step-content">
+                <p>等待 1-2 分钟，页面刷新后会显示：</p>
+                <div class="code">Your site is live at:
+https://franklinghu.github.io/zhongkao-practice/</div>
+                
+                <p style="margin-top: 15px;"><strong>✅ 答题链接：</strong></p>
+                <div class="code">https://franklinghu.github.io/zhongkao-practice/daily-practice/2026-03-18-monday.html</div>
+            </div>
+        </div>
+        
+        <div class="step success">
+            <div class="step-title">
+                <span class="step-number">✅</span>
+                部署完成检查清单
+            </div>
+            <div class="step-content">
+                <p>部署完成后，在浏览器中测试以下功能：</p>
+                <ul class="checklist">
+                    <li>页面能正常打开</li>
+                    <li>可以切换四科标签页（语文/历史/数学/英语）</li>
+                    <li>可以点击选项</li>
+                    <li>显示正确答案和解析</li>
+                    <li>成绩统计正常</li>
+                    <li>错题本功能可用</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="step">
+            <div class="step-title">
+                <span class="step-number">📱</span>
+                分享给孩子
+            </div>
+            <div class="step-content">
+                <p>部署成功后，将以下链接发送给孩子：</p>
+                <div class="code">📚 中考答题系统
+🔗 链接：https://franklinghu.github.io/zhongkao-practice/daily-practice/2026-03-18-monday.html
+
+💡 使用说明：
+1. 每天按时完成练习
+2. 系统会自动判分
+3. 错题会自动记录
+4. 手机/电脑/平板都能用</div>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 30px; padding-top: 30px; border-top: 2px solid #e9ecef;">
+            <p style="color: #6c757d; margin-bottom: 15px;">需要帮助？查看完整部署指南：</p>
+            <a href="file:///home/admin/.openclaw/workspace/DEPLOY-Franklinghu.md" class="btn">📄 查看 DEPLOY-Franklinghu.md</a>
+        </div>
+    </div>
+</body>
+</html>
