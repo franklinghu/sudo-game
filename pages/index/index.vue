@@ -7,29 +7,29 @@
     </view>
     
     <view class="menu">
-      <view class="menu-item" @click="startGame('easy')">
+      <view class="menu-item" @tap="startGame('easy')">
         <text class="level-name">简单</text>
         <text class="level-desc">适合入门</text>
       </view>
-      <view class="menu-item" @click="startGame('medium')">
+      <view class="menu-item" @tap="startGame('medium')">
         <text class="level-name">中等</text>
         <text class="level-desc">适合练习</text>
       </view>
-      <view class="menu-item" @click="startGame('hard')">
+      <view class="menu-item" @tap="startGame('hard')">
         <text class="level-name">困难</text>
         <text class="level-desc">挑战自我</text>
       </view>
-      <view class="menu-item" @click="startGame('expert')">
+      <view class="menu-item" @tap="startGame('expert')">
         <text class="level-name">专家</text>
         <text class="level-desc">极限挑战</text>
       </view>
     </view>
     
     <view class="bottom-btns">
-      <view class="btn" @click="goDaily">
+      <view class="btn" @tap="goDaily">
         <text>每日挑战</text>
       </view>
-      <view class="btn" @click="goRecord">
+      <view class="btn" @tap="goRecord">
         <text>我的记录</text>
       </view>
     </view>
