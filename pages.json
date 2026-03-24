@@ -16,6 +16,14 @@
         "navigationBarTextStyle": "white",
         "navigationStyle": "custom"
       }
+    },
+    {
+      "path": "pages/record/index",
+      "style": {
+        "navigationBarTitleText": "记录",
+        "navigationBarBackgroundColor": "#1a1a2e",
+        "navigationBarTextStyle": "white"
+      }
     }
   ],
   "globalStyle": {
