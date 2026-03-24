@@ -42,7 +42,7 @@ import { generatePuzzle } from '../../utils/sudoku';
 function startGame(difficulty) {
   const { puzzle, solution } = generatePuzzle(difficulty);
   uni.setStorageSync('currentGame', { puzzle, solution, difficulty, startTime: Date.now() });
-  uni.navigateTo({ url: `/pages/game/index?difficulty=${difficulty}` });
+  uni.navigateTo({ url: '/pages/game/index?difficulty=' + difficulty });
 }
 
 function goDaily() {
